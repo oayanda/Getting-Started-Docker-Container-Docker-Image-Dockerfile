@@ -33,7 +33,7 @@ However, a bind mount has a more fragile setup, since the mounted host directory
 
 ```bash
 #Run a container with a bind mount:
-- $ docker run -it --name=foo --mount source=shared-vol,target=/src/shared ubuntu bash
+- $ docker run -it --name=foo --mount type=bind,source=shared-vol,target=/src/shared ubuntu bash
 ```
 
 ## Tmpfs Mounts 
